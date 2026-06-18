@@ -16,14 +16,12 @@
       --bg: #f4ede0;
       --fg: #2a2520;
       --muted: #7a6f5c;
-      --accent: #cc6633;
     }
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #050d1c;
         --fg: #ede1c8;
         --muted: #6d7d92;
-        --accent: #e07a3f;
       }
     }
     * { box-sizing: border-box; }
@@ -91,19 +89,6 @@
       margin: 0 0.55rem;
       opacity: 0.55;
     }
-    footer {
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--muted);
-      padding: 1.5rem 1rem calc(1.25rem + env(safe-area-inset-bottom));
-    }
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent);
-      padding-bottom: 1px;
-    }
-    footer a:hover { opacity: 0.75; }
   </style>
 </head>
 <body>
@@ -122,8 +107,5 @@
       </ul>
     </div>
   </main>
-  <footer>
-    <a href="https://github.com/byvlasov">github.com/byvlasov</a>
-  </footer>
 </body>
 </html>

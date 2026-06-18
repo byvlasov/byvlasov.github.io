@@ -43,19 +43,15 @@
       max-width: 560px;
     }
     .avatar {
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
       margin: 0 auto 1.75rem;
       border-radius: 50%;
-      background: linear-gradient(135deg, #6c92ff 0%, #1c4fd9 100%);
-      color: white;
-      font-size: 44px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      display: grid;
-      place-items: center;
-      box-shadow: 0 10px 30px rgba(28, 79, 217, 0.25);
-      user-select: none;
+      background-image: url('avatar.jpg');
+      background-size: 230%;
+      background-position: 50% 22%;
+      background-repeat: no-repeat;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
     }
     h1 {
       margin: 0 0 0.85rem;
@@ -96,7 +92,7 @@
 <body>
   <main>
     <div class="card">
-      <div class="avatar" aria-hidden="true">VV</div>
+      <div class="avatar" role="img" aria-label="Vladimir Vlasov"></div>
       <h1>Vladimir Vlasov</h1>
       <p class="bio">
         <span>man</span><span>husband</span><span>father</span><span>son</span><span>brother</span><span>growth manager</span><span>triathlete</span>

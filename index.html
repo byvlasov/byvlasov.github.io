@@ -16,12 +16,14 @@
       --bg: #f4ede0;
       --fg: #2a2520;
       --muted: #7a6f5c;
+      --accent: #cc6633;
     }
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #050d1c;
         --fg: #ede1c8;
         --muted: #6d7d92;
+        --accent: #e07a3f;
       }
     }
     * { box-sizing: border-box; }
@@ -89,6 +91,21 @@
       margin: 0 0.55rem;
       opacity: 0.55;
     }
+    .links {
+      margin-top: 1.75rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 1px;
+    }
+    .links a:hover { opacity: 0.75; }
   </style>
 </head>
 <body>
@@ -105,6 +122,9 @@
         <li>manager</li>
         <li>triathlete</li>
       </ul>
+      <div class="links">
+        <a href="memo.html">memo</a>
+      </div>
     </div>
   </main>
 </body>
